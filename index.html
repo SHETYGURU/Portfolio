@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cursors.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #1788ae;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #23b9eb;
+      }
+    </style>
+    <script src="./matter.js" defer></script>
+  </head>
+  <body class="bg-[#111] text-white font-['Nunito']">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    
+    
+    <section class="flex flex-col justify-between h-screen">
+      <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto" >
+      <img  src="./assets/icons/logo.svg" class="w-7 hover:text-white"  alt="Logo Icon"  style="width:3%;" />
+
+        <div class="flex gap-4 pointer-events-auto">
+           <a href="tel:8296302504j">
+            <img  src="./assets/icons/phone.svg"  class="w-7 hover:text-white"  alt="Phone Icon"  />
+           </a>
+          <a href="https://wa.me/8296302504?text=Hi, How can i help You?" target="_blank">
+          <img  src="./assets/icons/whatsapp.svg"  class="w-7 hover:text-white"  alt="Phone Icon"  />
+           </a>
+        </div>
+        
+      </header>
+      <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
+      <div class="flex -mt-10 relative">
+        <div class="w-full px-4 max-w-screen-xl mx-auto">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 406 368"
+          class="pointer-events-none absolute top-0 left-1/2 -translate-y-[80px] sm:-translate-y-[180px] -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[650px]"
+          fill="none"
+          style="opacity: 0.8;"
+        >
+          <g transform="scale(0.56) translate(70, 55)">
+            <path
+              fill="#1d7cff"
+              d="M437.889 230.836c-4.131-.429-102.133-10.425-185.798-2.716-33.917 3.125-58.879 33.154-55.753 67.071 9.442 64.048 63.848 56.083 112.869 53.721 13.035-.628 19.259 16.052 8.796 23.851-14.865 11.08-36.517 13.172-63.946 14.385-68.082.11-102.723-42.962-110.185-110.264-12.839-99.892 70.108-182.842 165.671-143.671 72.703 35.792 127.783-71.639 56.237-109.779C236.843-42.549 61.659 37.294 30.011 181.76-57.97 551.514 428.234 616.918 460.04 346.848c53.247-26.168 37.953-110.991-22.151-116.012z"
+            />
+            <path
+              fill="#1557e4"
+              d="M460.04 346.85C437.71 536.44 191.46 560.7 77.11 430.41c18.59 4.77 38.08 7.31 58.16 7.31 56.13 0 107.63-19.81 147.89-52.83 14.02-1.91 25.71-5.32 34.84-12.13 8.09-6.03 6.21-17.35-1.07-21.9 28.07-34.75 46.37-77.72 50.73-124.73 39.16 1.53 68.03 4.48 70.23 4.71 60.1 5.02 75.4 89.84 22.15 116.01z"
+            />
+            <path
+              fill="#0635b8"
+              d="M460.04 346.85c-12.34 104.73-93 159.01-182.02 164.66 82.67-41.82 139.34-127.55 139.34-226.52 0-19.4-2.18-38.29-6.31-56.44 15.62 1.14 25.58 2.16 26.84 2.29 60.1 5.02 75.4 89.84 22.15 116.01z"
+            />
+            <circle
+              cx="284.864"
+              cy="287.868"
+              r="30"
+              fill="#4c82f3"
+            />
+            <circle
+              cx="137.09"
+              cy="393.392"
+              r="30"
+              fill="#4364d7"
+            />
+          </g>
+        </svg>
+        
+          <div class="relative ml-4 md:ml-12">
+            <h1 class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12" >
+             Gururaj
+            </h1>
+            <p  class="pointer-events-none font-['Merriweather'] italic my-4 md:my-8">
+              Full Stack Developer
+            </p>
+            <div class="relative">
+              <button  id="aboutButton"
+              class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
+              >
+              About Me
+
+              <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1"
+                x="0px"
+                y="0px"
+                width="44"
+                height="44"
+                viewBox="0 0 100 100"
+                class="absolute top-1/2 -translate-y-1/2 -right-7 group-hover:-right-8 ease-in-out duration-100"
+              >
+                <g transform="translate(0,-952.36218)">
+                  <path
+                    style="
+                      text-indent: 0;
+                      text-transform: none;
+                      direction: ltr;
+                      block-progression: tb;
+                      baseline-shift: baseline;
+                      color: #000000;
+                      enable-background: accumulate;
+                    "
+                    d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                    fill="#fff"
+                    fill-opacity="1"
+                    stroke="white"
+                    stroke-width="2"
+                    marker="none"
+                    visibility="visible"
+                    display="inline"
+                    overflow="visible"
+                  />
+                </g>
+              </svg>
+            </button>
+            </div>
+            
+            <!-- Overlay -->
+            <!-- Overlay -->
+            <div id="overlay">
+              <button id="closeButton" class="close-button">
+                &times;
+                <span class="close-text">Close</span>
+              </button>
+              <div class="overlay-content flex flex-col lg:flex-row items-center h-full">
+                <!-- Left Section: GIF with Moving Objects -->
+                <div class="relative w-full lg:w-1/2 flex items-center justify-center p-4">
+                  <!-- Random Moving Objects revolving around GIF -->
+                  <div class="moving-object" style="width: 30px; height: 30px;"></div>
+                  <div class="moving-object" style="width: 25px; height: 25px;"></div>
+                  <div class="moving-object" style="width: 20px; height: 20px;"></div>
+                </div>
+            
+                <!-- Right Section: Text Content -->
+                <div class="container">
+                  <!-- Left Section: Animated GIF -->
+                  <div class="left-section">
+                    <img src="/assets/images/about.gif" alt="Animated GIF" class="animated-gif" />
+                  </div>
+                
+                  <!-- Right Section: Scrollable Content -->
+                  <div class="right-section">
+                    <h1>About Me</h1>
+                    <p>
+                      I am a software developer with a passion for building dynamic and
+                      user-friendly web applications. With 1.5 years of experience in web
+                      development, I have worked on diverse projects, including a food ordering
+                      platform and a visiting card generator. I enjoy solving technical
+                      challenges and am always eager to explore new technologies to enhance my
+                      skills. My goal is to create impactful digital solutions that make a
+                      difference.
+                    </p>
+                    <ul>
+                      <li>Hands-on expertise in React.js, Node.js, and Firebase</li>
+                      <li>Experience with MERN stack for full-stack applications</li>
+                      <li>Successfully led development in a startup environment</li>
+                      <li>Developed end-to-end projects, managing both front-end and back-end</li>
+                      <li>Skilled in API integration and real-time data management</li>
+                      <li>Proficient in tools like Git, Tailwind CSS, and Figma</li>
+                      <li>Enthusiastic about learning new technologies like TypeScript and Next.js</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+          <li>
+            <a href="https://www.linkedin.com/in/gururaj-shetty-03723922a/" target="_blank">
+            <img src="./assets/icons/linkedin.svg" class="w-7 hover:text-white" alt="Email Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/share/yKXHcLHwzniAT6j8/" target="_blank">
+              <img  src="./assets/icons/twitter-x.svg"  class="w-7 hover:text-white"  alt="Email Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/gururaj_shetty/">
+              <img  src="./assets/icons/instagram.svg"  class="w-7 hover:text-white"  alt="Email Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:shettygururaj279@gmail.com" target="_blank">
+              <img src="./assets/icons/email.svg"  class="w-7 hover:text-white" alt="Email Icon" />
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://www.youtube.com/@FunnyClips-qu7lp">
+              <img src="./assets/icons/youtube.svg" class="w-7 hover:text-white" alt="Email Icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
+        
+
+        <button
+        onclick="document.getElementById('second').scrollIntoView({ behavior: 'smooth' });"
+
+          class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20"
+        >
+          Latest Works
+
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            width="44"
+            height="44"
+            viewBox="0 0 100 100"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+          >
+            <g transform="translate(0,-952.36218)">
+              <path
+                style="
+                  text-indent: 0;
+                  text-transform: none;
+                  direction: ltr;
+                  block-progression: tb;
+                  baseline-shift: baseline;
+                  color: #000000;
+                  enable-background: accumulate;
+                "
+                d="m 88.999835,1002.3621 c 0,-0.4628 -0.2799,-1.0773 -0.5639,-1.3755 l -15.9997,-17.00026 c -0.747,-0.7723 -1.9572,-0.8618 -2.8281,-0.078 -0.7786,0.7007 -0.798,2.0673 -0.078,2.8282 l 12.8435,13.62516 -69.37347,0 c -1.1046,0 -2,0.8954 -2,2 0,1.1046 0.8954,2.0001 2,2.0001 l 69.37347,0 -12.8435,13.6252 c -0.7199,0.7608 -0.6688,2.0938 0.078,2.8281 0.7885,0.7752 2.0925,0.7062 2.8281,-0.078 l 15.9997,-17.0002 c 0.4701,-0.4611 0.556,-0.9052 0.5639,-1.3748 z"
+                fill="#fff"
+                fill-opacity="1"
+                stroke="white"
+                stroke-width="2"
+                marker="none"
+                visibility="visible"
+                display="inline"
+                overflow="visible"
+              />
+            </g>
+          </svg>
+        </button>
+        
+       
+      </div>
+      
+    </section>
+    <section  id="second" class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+      <h2 class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-b-2 border-[#1788ae]" >
+        Latest Works
+      </h2>
+      <div
+        class="flex flex-col sm:flex-row gap-4 mt-8 sm:gap-[80px] items-center sm:mt-20 relative"
+      >
+        <div class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+        <div class="w-4 h-4 rounded-full border-[3px] border-[#459bd5] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
+        <a href="https://foodcourtdemosite.netlify.app/" class="flex w-full relative justify-center sm:justify-start"   >
+          <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200">
+            <img class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]" src="./assets/images/MessEatz.png" alt=""/>
+            <span class="flex group-hover:-top-14 ease-jump duration-200 bg-[#459bd5] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
+              MessEatz
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
+            MessEatz
+          </h3>
+          <span class="text-[#459bd5] text-base md:text-lg"
+            >(FoodChain Startup)</span
+          >
+          <p class="text-justify text-sm md:text-base mt-2">
+            A FoodChain startup that simplifies online food ordering by connecting users to nearby eateries. 
+            It allows users to browse menus, place orders, and make payments seamlessly, ensuring a smooth and hassle-free dining experience.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #React.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base" >
+              #Node.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #FireBase
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #CSS
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #HTML
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Figma
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+      >
+        <div class="order-2 sm:order-1 w-full">
+          <h3 class="text-[#ffe578] font-bold text-2xl md:text-4xl">
+            Visiting Card Generator
+          </h3>
+          <span class="text-[#ffe578] text-base md:text-lg"
+            >(Card Generator)</span
+          >
+          <p class="text-justify text-sm md:text-base mt-2">
+            A tool that allows users to create and customize their digital visiting cards effortlessly.
+             Users can input their details, choose from various templates, and download the final design for professional use.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #React.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base" >
+              #Node.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #FireBase
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #CSS
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Tailwind css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #HTML
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Figma
+            </li>
+          </ul>
+        </div>
+        <div class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"></div>
+        <div class="w-4 h-4 rounded-full border-[3px] border-[#ffe578] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
+          <a href="https://visitingcardgenerator.netlify.app/" class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start">
+            <div class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto" >
+              <img class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"  src="./assets/images/Visiting Card Generator.png"  alt=""/>
+              <span class="flex group-hover:-top-14 ease-jump duration-200 text-black bg-[#ffe578] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2" >
+                
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                  ></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+            </div>
+          </a>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative">
+        <div   class="h-[1px] left-1/4 right-1/2 bg-[#094457] absolute top-1/2 hidden sm:block"></div>
+        <div  class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"></div>
+        <a href="https://texteditorsample.netlify.app/"  class="flex w-full relative justify-center sm:justify-start">
+          <div class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200"  >
+            <img  class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]" src="./assets/images/Text editor.png"  alt="Image" />
+            <span
+              class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2" >
+             Text Editor
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+            Text Editor
+          </h3>
+          <span class="text-[#fc815c] text-base md:text-lg"
+            >(Text CRUD Operation )</span
+          >
+          <p class="text-justify text-sm md:text-base mt-2">
+            A web-based application that enables users to create, edit, and delete text entries.
+             It provides a simple interface for managing text content efficiently, supporting basic CRUD operations.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <ul class="flex flex-wrap gap-2 mt-2">
+             
+              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                #CSS
+              </li>
+              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                #Tailwind css
+              </li>
+              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                #Javascript
+              </li>
+              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                #HTML
+              </li>
+              <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+                #Figma
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+      >
+        <div class="order-2 sm:order-1 w-full">
+          <h3 class="text-[#47afa1] font-bold text-2xl md:text-4xl">
+            User Registartion
+          </h3>
+          <span class="text-[#47afa1] text-base md:text-lg"
+            >(User Operation CRUD)</span
+          >
+          <p class="text-justify text-sm md:text-base mt-2">
+            Allows update their profiles, view details, and delete accounts. 
+            It manages user data efficiently through basic CRUD operations, ensuring a seamless user management experience.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #React.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Express.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base" >
+              #Node.js
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #FireBase
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #CSS
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Tailwind css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #HTML
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Figma
+            </li>
+          </ul>
+        </div>
+        <div
+          class="h-[1px] left-1/2 right-1/4 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+        ></div>
+        <div
+          class="w-4 h-4 rounded-full border-[3px] border-[#47afa1] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+        ></div>
+        <a
+          href="https://github.com/SHETYGURU/User-Registration-CRUD"
+          class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
+        >
+          <div
+            class="flex flex-col items-center relative group sm:hover:scale-105 ease-in-out duration-200 sm:ml-auto"
+          >
+            <img
+              class="max-w-[400px] w-full relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              src="./assets/images/User Registration.png"
+              alt=""
+            />
+            <span
+              class="flex group-hover:-top-14 ease-jump duration-200 bg-[#47afa1] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"
+              >User Registrstion
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
+      >
+        <div
+          class="h-[1px] left-1/4 right-1/2 bg-[#1788ae] absolute top-1/2 hidden sm:block"
+        ></div>
+        <div
+          class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
+        ></div>
+        <a
+          href="https://aurikatech.netlify.app/"
+          class="flex w-full relative justify-center sm:justify-start"
+        >
+          <div
+            class="flex flex-col items-center relative group hover:scale-105 ease-in-out sm:mr-auto duration-200"
+          >
+            <img
+              class="max-w-[400px] w-full mr-auto relative z-10 drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
+              src="./assets/images/Invoice Generator.png"
+              alt=""
+            />
+            <span
+              class="flex group-hover:-top-14 ease-jump duration-200 bg-[#fc815c] sm:absolute left-1/2 sm:-translate-x-1/2 top-5 px-2 py-1 text-sm sm:text-base mt-2 rounded w-max items-center gap-1 after:hidden sm:after:block after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2"  
+              >Invoice Generator
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="w-full">
+          <h3 class="text-[#fc815c] font-bold text-2xl md:text-4xl">
+            Invoice Generator
+          </h3>
+          <span class="text-[#fc815c] text-base md:text-lg"
+            >(Generate Invoice)</span
+          >
+          <p class="text-justify text-sm md:text-base mt-2">
+            creation of professional invoices by allowing users to input details like items, quantities, prices, and tax rates. 
+            It automatically calculates totals and generates downloadable invoices for seamless business transactions.
+          </p>
+
+          <ul class="flex flex-wrap gap-2 mt-2">
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #CSS
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Tailwind css
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #Javascript
+            </li>
+            <li class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
+              #HTML
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+      <div
+        class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
+      ></div>
+    </section>
+    <section class="max-w-screen-xl mx-auto pb-12">
+      <h2
+        class="text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+      >
+        ..My Goals..
+      </h2>
+      <div class="swiper mySwiper !py-14">
+        <div class="swiper-wrapper items-center">
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row w-full md:max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+                src="/assets/images/goal 1.png"
+                alt="testimonial 3"
+              />
+              <div
+                class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+              >
+                <p class="text-sm md:text-base mb-2">
+                  " I aim to enhance my expertise in full-stack development by working on diverse projects that challenge my technical and problem-solving skills. 
+                  I want to deepen my knowledge of emerging technologies like TypeScript, Next.js, and cloud platforms to build efficient and scalable applications. 
+                  My focus is on gaining practical experience while delivering impactful digital solutions.”
+                </p>
+                <h2
+                  class="text-right text-[#459bd5] font-bold text-2xl md:text-4xl"
+                >
+                  Short-Term Goals
+                </h2>
+               
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+                src="/assets/images/goal 2.png"
+                alt="testimonial 3"
+              />
+              <div
+                class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+              >
+                <p class="text-sm md:text-base mb-2">
+                  “Over the next few years, I aspire to take on leadership roles in software development, guiding teams to build innovative and user-centric applications.
+                   I plan to specialize in architecting solutions that integrate AI and automation to solve real-world problems effectively. 
+                  Additionally, I aim to contribute to open-source projects and expand my professional network within the tech community.”
+                </p>
+                <h2
+                  class="text-right text-[#459bd5] font-bold text-2xl md:text-4xl"
+                >
+                  Mid-Term Goals
+                </h2>
+               
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide px-4">
+            <div
+              class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab"
+            >
+              <img
+                class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+                src="/assets/images/goal 3.png"
+                alt="testimonial 3"
+              />
+              <div
+                class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
+              >
+              <p class="text-sm md:text-base mb-2">
+                “I envision myself as a senior developer or technical architect, driving large-scale, impactful projects. 
+                I aim to stay at the forefront of technology trends, continually learning and adapting to advancements in the industry. 
+                Ultimately, I want to mentor aspiring developers and contribute to creating a positive impact through technology on a global scale.”
+              </p>
+              <h2 class="text-right text-[#459bd5] font-bold text-2xl md:text-4xl">
+                Long-Term Goals
+              </h2>
+             
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="max-w-screen-xl mx-auto px-4 pb-12">
+      <h2
+        class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
+      >
+        Let's Connect
+      </h2>
+      <div class="flex flex-col md:flex-row items-center mt-10">
+        <div class="w-full">
+          <img src="./assets/images/contact-me.svg" alt="phone" />
+        </div>
+        <form class="w-full" name="contactUS" netlify>
+          <label
+            for="name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Name</label
+          >
+          <div class="relative mb-4">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              placeholder="Enter your name"
+            />
+          </div>
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your Email</label
+          >
+          <div class="relative mb-4">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              placeholder="name@procodrr.com"
+            />
+          </div>
+          <label
+            for="message"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Message</label
+          >
+          <div class="relative mb-4">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+            ></div>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="flex flex-col items-center pb-10">
+      <p class="text-xs text-gray-300">Gururaj </p>
+      <div class="black-logo my-4">
+        <img  src="./assets/icons/logo.svg" class="w-7 hover:text-white"  alt="Logo Icon"  />
+
+      </div>
+      <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+        <li>
+          <a href="https://www.linkedin.com/in/gururaj-shetty-03723922a/" target="_blank">
+            <img 
+            src="./assets/icons/linkedin.svg" 
+            class="w-7 hover:text-white" 
+            alt="Email Icon" 
+          />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/share/yKXHcLHwzniAT6j8/" target="_blank">
+            <img 
+            src="./assets/icons/twitter-x.svg" 
+            class="w-7 hover:text-white" 
+            alt="Email Icon" 
+          />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/gururaj_shetty/">
+            <img 
+            src="./assets/icons/instagram.svg" 
+            class="w-7 hover:text-white" 
+            alt="Email Icon" 
+          />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:shettygururaj279@gmail.com" target="_blank">
+            <img 
+            src="./assets/icons/email.svg" 
+            class="w-7 hover:text-white" 
+            alt="Email Icon" 
+          />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@FunnyClips-qu7lp">
+            <img 
+            src="./assets/icons/youtube.svg" 
+            class="w-7 hover:text-white" 
+            alt="Email Icon" 
+          />
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+// Get elements
+const aboutButton = document.getElementById("aboutButton");
+const overlay = document.getElementById("overlay");
+const closeButton = document.getElementById("closeButton");
+
+// Show overlay
+aboutButton.addEventListener("click", () => {
+  overlay.style.display = "block"; // Make overlay visible
+  addMovingObjects(); // Add moving random objects
+});
+
+// Close overlay using close button
+closeButton.addEventListener("click", () => {
+  overlay.style.display = "none"; // Hide overlay
+});
+
+// Function to add moving random small objects
+function addMovingObjects() {
+  const numObjects = 30; // Number of moving small objects
+  const objects = []; // Array to store objects for movement logic
+
+  // Remove any existing objects when overlay is shown
+  const existingObjects = overlay.querySelectorAll(".moving-object");
+  existingObjects.forEach((obj) => obj.remove());
+
+  for (let i = 0; i < numObjects; i++) {
+    const obj = document.createElement("div");
+    obj.classList.add("moving-object");
+
+    // Set random size between 5px and 20px
+    const size = Math.random() * 15 + 5;
+    obj.style.width = `${size}px`;
+    obj.style.height = `${size}px`;
+
+    // Set random position on the screen
+    const x = Math.random() * 100;
+    const y = Math.random() * 100;
+    obj.style.left = `${x}%`;
+    obj.style.top = `${y}%`;
+
+    // Set the opacity (reduced by 70%)
+    obj.style.opacity = 0.5;
+
+    // Append the object to the overlay
+    overlay.appendChild(obj);
+
+    // Store the object for movement updates
+    objects.push(obj);
+  }
+
+  // Animate the objects' movement randomly in different directions
+  function animateObjects() {
+    objects.forEach((obj) => {
+      const dx = (Math.random() * 2 - 1) * 2; // Movement in X direction
+      const dy = (Math.random() * 2 - 1) * 2; // Movement in Y direction
+
+      const rect = obj.getBoundingClientRect();
+      const left = rect.left + dx;
+      const top = rect.top + dy;
+
+      // Ensure the object stays within the boundaries of the overlay
+      if (left < 0 || left > window.innerWidth) obj.style.left = `${Math.random() * 100}%`;
+      if (top < 0 || top > window.innerHeight) obj.style.top = `${Math.random() * 100}%`;
+
+      obj.style.transform = `translate(${dx}px, ${dy}px)`;
+    });
+
+    // Continuously update the movement
+    requestAnimationFrame(animateObjects);
+  }
+
+  // Start animating the objects
+  animateObjects();
+}
+
+
+    </script>
+    <script src="cursors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  </body>
+</html>

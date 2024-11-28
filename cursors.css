@@ -1,0 +1,191 @@
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+
+
+  /* Button styles */
+.button {
+    background: linear-gradient(to left, #1595b6, #1f2667e6);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  
+/* Overlay Styling */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+    display: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  /* Overlay Content */
+  .overlay-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Container for the layout */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;  /* Adjust width for centering */
+    background-color: rgba(26, 32, 44, 0.9); /* Semi-transparent background */
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+  
+  /* Left section: Animated GIF */
+  .left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Animated GIF Styling */
+  .animated-gif {
+    width: 300px; /* Increased size */
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Right section: Scrollable content */
+  .right-section {
+    flex: 1;
+    padding: 20px;
+    max-height: 400px; /* Increased height for more content */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Headings and paragraph styling */
+  .right-section h1 {
+    font-size: 36px;  /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .right-section p {
+    font-size: 18px;  /* Increased font size */
+    margin-bottom: 20px;
+  }
+  
+  /* List styling */
+  .right-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .right-section ul li {
+    margin-bottom: 15px;
+    font-size: 18px;  /* Increased font size */
+  }
+  
+  /* Add random moving objects styling */
+  .moving-objects-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* Prevent interaction */
+  }
+  /* Add styles for moving objects at the bottom */
+.moving-object {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5; /* Set opacity to 0.5 */
+    animation: move 10s linear infinite;
+    pointer-events: none; /* Prevent interaction */
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(var(--random-x), var(--random-y));
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .moving-object {
+      animation-duration: 8s; /* Faster animation on smaller screens */
+    }
+  }
+  
+  /* Close Button */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 36px; /* Larger size for X */
+    cursor: pointer;
+    z-index: 1002;
+    padding: 5px;
+    border-radius: 0.5cm; /* Rounded effect */
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hidden "Close" text by default */
+  .close-text {
+    opacity: 0; /* Hidden initially */
+    margin-left: 8px; /* Space between X and Close */
+    font-size: 18px;
+    color: rgb(255, 250, 250);
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+  }
+  
+  /* Hover effect for the close button */
+  .close-button:hover {
+    color: rgb(249, 249, 249);
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(255, 255, 255); /* Border appears */
+    border-radius: 0.5cm; /* Ensure the hover effect's border-radius is retained */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    height: 5%;
+  }
+  
+  /* Show the "Close" text on hover */
+  .close-button:hover .close-text {
+    opacity: 1; /* Fade in the text */
+  }
