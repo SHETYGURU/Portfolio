@@ -127,7 +127,7 @@
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    opacity: 0.2; /* Set opacity to 0.5 */
+    opacity: 0.1; /* Set opacity to 0.5 */
     animation: move 10s linear infinite;
     pointer-events: none; /* Prevent interaction */
   }
